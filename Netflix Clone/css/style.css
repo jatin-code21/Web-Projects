@@ -1,5 +1,6 @@
 :root {
   --primary-color: #e50914;
+  --dark-color: #141414;
 }
 * {
   margin: 0;
@@ -45,9 +46,22 @@ img {
   background: url(/img/background.png) no-repeat center center/cover;
 }
 
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
+}
+
 .showcase-top {
   position: relative;
   height: 90px;
+  z-index: 2;
 }
 
 .showcase-top img {
@@ -75,6 +89,7 @@ img {
   align-items: center;
   text-align: center;
   margin-top: 9rem;
+  z-index: 2;
 }
 
 .showcase-content h1 {
@@ -82,6 +97,22 @@ img {
   font-size: 5.1rem;
   line-height: 1.1;
   margin: 0 0 2rem;
+}
+
+.showcase-content p {
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0 0 2rem;
+  color: #fff;
+}
+
+/* Tabs */
+.tabs {
+  background: var(--dark-color);
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
 }
 
 /* button */
