@@ -150,6 +150,17 @@ img {
   color: white;
 }
 
+/* Hide Content initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
 #tab-1-content .tab-1-content-inner {
   display: grid;
   gap: 2rem;
@@ -284,6 +295,10 @@ table {
 
 .btn-rounded {
   border-radius: 5px;
+}
+
+.btn-icon {
+  margin-left: 1rem;
 }
 
 .btn-xl {
